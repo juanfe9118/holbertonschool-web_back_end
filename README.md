@@ -8,4 +8,8 @@
 
 #### [0x01-python_async_function](./0x01-python_async_function)
 
-- Directory to learb about async functions in Python. To execute programs at delayed times using asynchronous coroutines.
+- Directory to learn about async functions in Python. To execute programs at delayed times using asynchronous coroutines.
+
+#### [0x02-python_async_comprehension](./0x02-python_async_comprehension)
+
+- Directory to learn about async generators and comprehensions.
