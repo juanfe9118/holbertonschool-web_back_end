@@ -15,9 +15,7 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     @max_delay: the max delay passed to wait_random
     Return: the list of waited times in float
     '''
-    tasks = [asyncio.gather(task_wait_random(max_delay)) for _ in range(n)]
     time_list = []
-    for task in asyncio.as_completed(tasks):
-        time: float = await task
-        time_list.append(time)
-    return time_list
+    for _ in range(n):
+        time_list.append(task_wait_random(max_delay))
+    return [await time for time in asyncio.as_completed(time_list)]
