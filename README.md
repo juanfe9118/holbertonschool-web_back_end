@@ -13,3 +13,7 @@
 #### [0x02-python_async_comprehension](./0x02-python_async_comprehension)
 
 - Directory to learn about async generators and comprehensions.
+
+#### [0x03-caching](./0x03-caching)
+
+- Directory to learn about caching policies and the different algorithms used to implement them.
