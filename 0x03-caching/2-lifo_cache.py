@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-FIFO caching module
+LIFO caching module
 '''
 BaseCaching = __import__('base_caching').BaseCaching
 
