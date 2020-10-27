@@ -17,3 +17,7 @@
 #### [0x03-caching](./0x03-caching)
 
 - Directory to learn about caching policies and the different algorithms used to implement them.
+
+#### [0x04-pagination](./0x04-pagination)
+
+- Directory to learn about pagination and the different ways to split content into pages.
