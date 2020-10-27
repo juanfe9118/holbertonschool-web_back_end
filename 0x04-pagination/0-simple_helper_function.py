@@ -2,9 +2,10 @@
 '''
 Module for simple helper function to pagination
 '''
+from typing import Tuple
 
 
-def index_range(page: int, page_size: int) -> tuple:
+def index_range(page: int, page_size: int) -> Tuple(int, int):
     '''
     Simple helper function to pagination
 
