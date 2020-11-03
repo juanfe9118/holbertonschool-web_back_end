@@ -6,7 +6,7 @@ import bcrypt
 
 
 def hash_password(password: str) -> bytes:
-    ''' 
+    '''
     Function that hashes a password for added security.
     '''
     encoded_password = password.encode()
