@@ -21,3 +21,7 @@
 #### [0x04-pagination](./0x04-pagination)
 
 - Directory to learn about pagination and the different ways to split content into pages.
+
+#### [0x05-personal_data](./0x05-personal_data)
+
+- Directory to learn about personal data and how to protect user data in our products.
