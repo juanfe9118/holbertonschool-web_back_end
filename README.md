@@ -25,3 +25,7 @@
 #### [0x05-personal_data](./0x05-personal_data)
 
 - Directory to learn about personal data and how to protect user data in our products.
+
+#### [0x06-Basic_authentication](./0x06-Basic_authentication)
+
+- Directory to learn about Basic Authentication of a RESTful API.
