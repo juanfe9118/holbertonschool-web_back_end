@@ -14,13 +14,30 @@ class Auth():
         '''
         Function that returns whether a page requires authentication
         '''
-        return False
+        if excluded_paths is None or excluded_paths == '':
+            return True
+        if path is not None:
+            if path[len(path) - 1] is not '/':
+                path += '/'
+        if path is None:
+            return True
+        for item in excluded_paths:
+            asterisk = item.find("*")
+            if asterisk != -1 and len(path) >= len(item):
+                pathcpy = path[: asterisk]
+                if pathcpy == item[: asterisk]:
+                    return False
+            elif path == item:
+                return False
+        return True
 
     def authorization_header(self, request=None) -> str:
         '''
         Function that returns the auth header
         '''
-        return None
+        if request is None:
+            return None
+        return request.headers.get('Authorization')
 
     def current_user(self, request=None) -> TypeVar('User'):
         '''
