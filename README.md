@@ -29,3 +29,7 @@
 #### [0x06-Basic_authentication](./0x06-Basic_authentication)
 
 - Directory to learn about Basic Authentication of a RESTful API.
+
+#### [0x08-user_authentication_service](./0x08-user_authentication_service)
+
+- Directory to learn about user authentication services.
