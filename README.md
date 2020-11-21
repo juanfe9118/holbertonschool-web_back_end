@@ -30,6 +30,10 @@
 
 - Directory to learn about Basic Authentication of a RESTful API.
 
+#### [0x07-Session_authentication](./0x07-Session_authentication)
+
+-Directory to learn about Session Authentication.
+
 #### [0x08-user_authentication_service](./0x08-user_authentication_service)
 
 - Directory to learn about user authentication services.
