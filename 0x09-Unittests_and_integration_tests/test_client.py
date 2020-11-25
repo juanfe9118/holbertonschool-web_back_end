@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-"""
-Unittest client.py
-Run: python3 -m unittest test_client | tail -1
-"""
+""" Test the utils """
+
 
 import requests
 import unittest
