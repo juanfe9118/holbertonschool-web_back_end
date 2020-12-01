@@ -6,21 +6,22 @@ from typing import Union, Callable, Optional
 from functools import wraps
 
 
+def count_calls(method: Callable) -> Callable:
+    '''Decorator to count how many times methods of the Cache class are
+    called
+    '''
+    key = method.__qualname__
+
+    @wraps(method)
+    def wrapper(self, *args, **kwds):
+        '''Wrapper that makes the decorator work'''
+        self._redis.incr(key)
+        return method(self, *args, **kwds)
+    return wrapper
+
+
 class Cache:
     '''Redis caching class'''
-
-    def count_calls(method: Callable) -> Callable:
-        '''Decorator to count how many times methods of the Cache class are
-        called
-        '''
-        key = method.__qualname__
-
-        @wraps(method)
-        def wrapper(self, *args, **kwds):
-            '''Wrapper that makes the decorator work'''
-            self._redis.incr(key)
-            return method(self, *args, **kwds)
-        return wrapper
 
     def __init__(self):
         '''Constructor method'''
