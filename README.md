@@ -41,3 +41,7 @@
 #### [0x09-Unittests_and_integration_tests](./0x09-Unittests_and_integration_tests)
 
 - Directory to learn about unittests and integration tests.
+
+#### [0x0B_redis_basic](./0x0B_redis_basic)
+
+- Directory to learn about basic redis.
