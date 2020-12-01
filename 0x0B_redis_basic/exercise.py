@@ -5,7 +5,7 @@ from uuid import uuid4
 from typing import Union, Callable, Optional
 
 
-class Cache():
+class Cache:
     '''Redis caching class'''
 
     def __init__(self):
