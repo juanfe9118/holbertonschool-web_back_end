@@ -18,9 +18,9 @@ class Cache:
         Method that stores a new key value pair in the redis client and
         returns the key
         '''
-        random_key = str(uuid4())
-        self._redis.set(random_key, data)
-        return random_key
+        uni_key = str(uuid4())
+        self._redis.set(uni_key, data)
+        return uni_key
 
     def get(self, key: str,
             fn: Optional[Callable] = None) -> Union[str, bytes, int, float]:
@@ -28,7 +28,7 @@ class Cache:
         Method that gets the value for a specified key and returns it after
         optionally passing it through a convertion function fn
         '''
-        value = self._redis.get(key)
+        val = self._redis.get(key)
         if fn:
-            value = fn(value)
-        return value
+            val = fn(val)
+        return val
