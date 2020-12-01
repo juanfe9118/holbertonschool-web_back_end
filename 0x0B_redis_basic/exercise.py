@@ -32,3 +32,17 @@ class Cache:
         if fn:
             val = fn(val)
         return val
+
+    def get_str(self, key: str) -> str:
+        '''Parameterizes a value from the redis client to str'''
+        val = self._redis.get(key)
+        return val.decode('utf-8')
+
+    def get_int(self, key: str) -> int:
+        '''Parameterizes a value from the redis client to int'''
+        val = self._redis.get(key)
+        try:
+            val = int(val.decode('utf-8'))
+        except Exception:
+            val = 0
+        return val
