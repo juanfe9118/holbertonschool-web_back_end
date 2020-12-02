@@ -42,6 +42,10 @@
 
 - Directory to learn about unittests and integration tests.
 
+#### [0x0A-i18n](./0x0A-i18n)
+
+- Directory to learn about i18n.
+
 #### [0x0B_redis_basic](./0x0B_redis_basic)
 
 - Directory to learn about basic redis.
