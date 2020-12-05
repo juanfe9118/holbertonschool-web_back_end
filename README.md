@@ -49,3 +49,7 @@
 #### [0x0B_redis_basic](./0x0B_redis_basic)
 
 - Directory to learn about basic redis.
+
+#### [0x0C-MySQL_Advanced](./0x0C-MySQL_Advanced)
+
+- Directory to learn about advanced MySQL queries.
