@@ -53,3 +53,7 @@
 #### [0x0C-MySQL_Advanced](./0x0C-MySQL_Advanced)
 
 - Directory to learn about advanced MySQL queries.
+
+#### [0x0D-NoSQL](./0x0D-NoSQL)
+
+- Directory to learn about NoSQL databases such as MongoDB.
