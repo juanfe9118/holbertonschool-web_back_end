@@ -5,7 +5,6 @@ Returns the Nginx logs but it adds the top 10 ips present in the logs
 from pymongo import MongoClient
 
 if __name__ == "__main__":
-    if __name__ == '__main__':
     c = MongoClient('mongodb://localhost:27017').logs.nginx
     print(f'{c.count_documents({})} logs')
     print('Methods:')
