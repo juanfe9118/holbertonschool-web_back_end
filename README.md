@@ -57,3 +57,7 @@
 #### [0x0D-NoSQL](./0x0D-NoSQL)
 
 - Directory to learn about NoSQL databases such as MongoDB.
+
+#### [0x0E-ES6_basic](./0x0E-ES6_basic)
+
+- Directory to learn about ES6 and the new features it has.
